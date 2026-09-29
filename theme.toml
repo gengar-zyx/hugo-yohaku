@@ -1,0 +1,65 @@
+name = "Yohaku"
+license = "MIT"
+licenselink = "https://github.com/gengar-zyx/hugo-yohaku/blob/main/LICENSE"
+description = "A quiet, typography-first Hugo theme derived from PaperMod"
+homepage = "https://github.com/gengar-zyx/hugo-yohaku"
+demosite = ""
+tags = [
+  "responsive",
+  "blog",
+  "clean",
+  "minimal",
+  "light",
+  "dark",
+  "fast",
+  "multilingual",
+  "search",
+  "seo",
+  "chroma",
+  "personal"
+]
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "cover-image",
+  "table-of-contents",
+  "opengraph",
+  "twitter-cards",
+  "favicon",
+  "archive",
+  "share-icons",
+  "cover",
+  "multilingual",
+  "social-icons",
+  "minified-assets",
+  "theme-toggle",
+  "menu-location-indicator",
+  "scroll-to-top",
+  "search",
+  "breadcrumbs",
+  "reading-time",
+  "word-count",
+  "code-copy",
+  "comments",
+  "edit-post",
+  "canonical-link",
+  "profile-mode",
+  "home-info-mode",
+  "related-posts",
+  "rss",
+  "multiple-authors",
+  "post-nav-links"
+]
+min_version = "0.165.0"
+
+[author]
+  name = "Gengar"
+  homepage = "https://github.com/gengar-zyx"
+
+# If porting an existing theme
+[original]
+  name = "PaperMod"
+  author = "Aditya Telange and contributors"
+  homepage = "https://github.com/adityatelange"
+  repo = "https://github.com/adityatelange/hugo-PaperMod/"

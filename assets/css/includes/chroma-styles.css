@@ -1,0 +1,12 @@
+/* Chroma's structural classes and token-based semantic states. */
+.bg,.chroma { color: var(--content); background-color: var(--code-block-bg); }
+.chroma .err,.chroma .gd { color: var(--error); }
+.chroma .gi { color: var(--success); }
+.chroma .lnlinks { text-decoration: none; color: inherit; }
+.chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+.chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+.chroma .hl { background-color: color-mix(in srgb, var(--accent) 10%, var(--theme)); }
+.chroma .lnt,.chroma .ln { white-space: pre; user-select: none; margin-right: .4em; padding: 0 .4em; color: var(--secondary); }
+.chroma .line { display: flex; }
+.chroma .ge { font-style: italic; }
+.chroma .gs,.chroma .gh,.chroma .gu { font-weight: 500; }

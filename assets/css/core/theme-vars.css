@@ -1,0 +1,37 @@
+/* Yohaku tokens. Reference: https://yohaku.innei.dev, captured 2026-09-09. */
+:root {
+  --n-1: #f9f8f5; --n-2: #f0efeb; --n-3: #e3e1db; --n-4: #d0cec6;
+  --n-5: #a8a69f; --n-6: #787670; --n-7: #5c5a55; --n-8: #403f3a;
+  --n-9: #24231f; --n-10: #141312;
+  --accent: #c56473; --accent-text: #a44959;
+  --info: #3d6896; --success: #487d62; --warning: #89612e; --error: #a64953;
+  --font-serif: Georgia, 'Noto Serif SC', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', SimSun, Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'PingFang SC', 'Microsoft YaHei', monospace;
+  --gap: 24px; --content-gap: 24px; --nav-width: 1040px; --main-width: 720px;
+  --header-height: 80px; --footer-height: 80px; --radius: 6px;
+  --theme: var(--n-1); --entry: var(--n-2); --primary: var(--n-10);
+  --secondary: var(--n-7); --tertiary: var(--n-3); --content: var(--n-9);
+  --code-block-bg: var(--n-2); --code-bg: var(--n-2);
+  --border: color-mix(in srgb, var(--n-9) 13%, transparent);
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --n-1: #141312; --n-2: #24231f; --n-3: #403f3a; --n-4: #5c5a55;
+  --n-5: #787670; --n-6: #a8a69f; --n-7: #d0cec6; --n-8: #e3e1db;
+  --n-9: #f0efeb; --n-10: #f9f8f5;
+  --accent-text: #df96a2; --info: #7090b3; --success: #8cbea3;
+  --warning: #c8a06b; --error: #c8767f;
+  color-scheme: dark;
+}
+/* Auto also works before script execution and when JavaScript is disabled. */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='auto'] {
+    --n-1: #141312; --n-2: #24231f; --n-3: #403f3a; --n-4: #5c5a55;
+    --n-5: #787670; --n-6: #a8a69f; --n-7: #d0cec6; --n-8: #e3e1db;
+    --n-9: #f0efeb; --n-10: #f9f8f5;
+    --accent-text: #df96a2; --info: #7090b3; --success: #8cbea3;
+    --warning: #c8a06b; --error: #c8767f;
+    color-scheme: dark;
+  }
+}
