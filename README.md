@@ -6,7 +6,7 @@
 
 需要 Hugo **0.165.0 或以上**。无需 Node、Tailwind、网络字体服务或 PaperMod 运行时依赖。
 
-在已有 Hugo 站点的根目录执行（私有仓库需要已获授权的 GitHub 账号）：
+在已有 Hugo 站点的根目录执行：
 
 ```sh
 git submodule add https://github.com/gengar-zyx/hugo-yohaku.git themes/yohaku
@@ -23,7 +23,7 @@ markup:
     noClasses: false
 ```
 
-克隆使用此主题的站点后，运行 `git submodule update --init --recursive` 获取主题。CI 和托管平台也需要有权读取此私有仓库；不要把访问令牌写进子模块 URL 或提交到配置文件。子模块共享配置使用 HTTPS URL；开发者本机的主题仓库 `origin` 可以使用 SSH URL `git@github.com:gengar-zyx/hugo-yohaku.git`。
+克隆使用此主题的站点后，运行 `git submodule update --init --recursive` 获取主题。此主题仓库公开可读，本地、CI 和托管平台均可通过 HTTPS 获取，无需为下载主题配置 GitHub 账号或访问令牌。子模块共享配置使用 HTTPS URL；有写入权限的开发者可在本机将主题仓库 `origin` 设为 SSH URL `git@github.com:gengar-zyx/hugo-yohaku.git`。
 
 更新主题时，在站点根目录执行 `git -C themes/yohaku pull --ff-only origin main`，再提交站点中的子模块版本变更。此仓库只包含 Yohaku；如需切回 PaperMod，请在站点中另行安装 PaperMod 并修改 `theme`。已有内容、路径和 front matter 无需迁移。
 
